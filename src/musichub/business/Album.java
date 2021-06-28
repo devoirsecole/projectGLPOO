@@ -107,6 +107,11 @@ public class Album {
 	public Date getDate() {
 		return date;
 	}
+
+	public String getArtist(){return artist;}
+
+	public int getLength(){return lengthInSeconds;}
+
 	
 	public void createXMLElement(Document document, Element parentElement)
 	{
