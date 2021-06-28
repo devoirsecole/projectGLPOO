@@ -13,6 +13,10 @@ public class Main
  	public static void main (String[] args) throws NoElementFoundException, FileNotFoundException {
 
 		MusicHub theHub = new MusicHub ();
+
+		//model
+		//view
+		//contoller
 		
 		System.out.println("Type h for available commands");
 		
@@ -227,6 +231,7 @@ public class Main
 					theHub.saveElements();
 					theHub.saveAlbums();
 					theHub.savePlayLists();
+					theHub.saveHistory();
 					System.out.println("Elements, albums and playlists saved!");
 					printAvailableCommands();
 					choice = scan.nextLine();

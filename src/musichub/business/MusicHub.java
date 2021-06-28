@@ -27,6 +27,7 @@ class SortByAuthor implements Comparator<AudioElement>
 }
 	
 public class MusicHub {
+
 	private List<Album> albums;
 	private List<PlayList> playlists;
 	private List<AudioElement> elements;
@@ -48,6 +49,7 @@ public class MusicHub {
 		this.loadElements();
 		this.loadAlbums();
 		this.loadPlaylists();
+		this.loadHistory();
 	}
 	
 	public void addElement(AudioElement element) {
@@ -379,7 +381,7 @@ public class MusicHub {
 		xmlHandler.createXMLFile(document, ELEMENTS_FILE_PATH);
  	}
 
- 	private void saveHistory(){
+ 	public void saveHistory(){
 
 		Document document = xmlHandler.createXMLDocument();
 		if (document == null) return;
